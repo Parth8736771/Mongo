@@ -9,6 +9,6 @@ namespace Mongo.Web.Service.IService
         Task<ResponseDto?> GetCouponByIdAsync(int id);
         Task<ResponseDto?> UpdateCouponAsync(CouponDto couponDto);
         Task<ResponseDto?> CreateCouponAsync(CouponDto couponDto);
-        Task<ResponseDto?> DeleteCouponAsync(string code);
+        Task<ResponseDto?> DeleteCouponAsync(int id);
     }
 }

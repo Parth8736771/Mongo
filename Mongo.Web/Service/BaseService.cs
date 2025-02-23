@@ -53,7 +53,8 @@ namespace Mongo.Web.Service
                     case HttpStatusCode.Unauthorized:
                         return new() { IsSuccess = false, Message = "Unauthorized" };
                     case HttpStatusCode.NotFound:
-                        return new() { IsSuccess = false, Message = "Not Found" };
+                        return new
+                            () { IsSuccess = false, Message = "Not Found" };
                     case HttpStatusCode.Forbidden:
                         return new() { IsSuccess = false, Message = "Forbidden" };
                     case HttpStatusCode.InternalServerError:
